@@ -1,0 +1,9 @@
+Manufacturer=Nuvoton
+PartNumber=NAU8810YG
+PartCategory=Integrated Circuit
+PackageCategory=Quad Flat No-Lead
+PinCount=21
+Version=1.1
+Released=2020-12-09 05:27:31
+Downloaded=2025-06-05 19:10:40
+3D=Y
