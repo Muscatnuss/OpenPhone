@@ -26728,6 +26728,7 @@
 		)
 		(embedded_fonts no)
 		(model "SIM7600G-H.stp"
+			(hide yes)
 			(offset
 				(xyz 0 0 0)
 			)
@@ -26736,6 +26737,17 @@
 			)
 			(rotate
 				(xyz -90 0 -180)
+			)
+		)
+		(model "C:/Users/Jansc/Desktop/freizeit/basteln/open phone/resources/SIM7600G-H/3D/SIM7600G-H.stp"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -180)
 			)
 		)
 	)
