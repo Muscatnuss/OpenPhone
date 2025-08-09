@@ -1,19 +1,12 @@
 # Open Phone
 
 # ToDo
-- [ ] On Board USB Hub
-- [ ] Human Interface
-	- [ ] Vibration
-	- [ ] Speaker
-	- [ ] Fingerprint Sensor
 - [ ] Accessories
 	- [ ] Flashlight
 - [ ] Human Interface
 	- [ ] Vibration
 	- [ ] Speaker
 	- [ ] Fingerprint Sensor
-- [ ] Accessories
-	- [ ] Flashlight
 - [ ] Connectivity
 	- [x] Data - USB-C
 		- [x] (SBUS Data)
@@ -37,7 +30,6 @@
 		- [ ] Camera
 		- [ ] Mic
 	- [x] USB-C Power delivery
-		- Power Only Buchse
 	- [x] Power usage monitoring
 		- [x] Current Monitor
 		- [x] Voltage Monitor
