@@ -20,13 +20,13 @@
 	- [ ] (LORA communication)
 		- meshtastic
 	- [x] Cellular
-- [ ] Sensoren
+- [ ] Sensors
 	- [x] IMU
 	- [x] Magnetometer
-	- [ ] Fingerabdruck
+	- [ ] Fingerprint
 - [ ] Video
 	- [ ] Display
-	- [ ] Kamera
+	- [ ] Camera
 	- [ ] HDMI
 - [ ] Audio
 	- [ ] cellular audio $\to$ USB
@@ -42,32 +42,28 @@
 		- [x] Current Monitor
 		- [x] Voltage Monitor
 # Hardware
-## Wärmeabfuhr
-- Akku
-	- sollte nicht viel Wärme erzeugen
-	- Sollte ohne Einschränkungen 45C ab können
+## Thermal management
+- Battery
+	- wont produce much heat
 - CPU
-	- darf nicht auf Akku aufliegen
+	- souldn't touch Battery
 
-Schichtung
+Layering
 - Screen
-- Akku
-- Wärme Leiter
-	- Keine punktuelle Akku Erwärmung
-	- Kühlung für Akku
+- Battery
 - RPI -> CPU Wärme nach hinten raus
 
 ## Controller
 Raspberry pi compute Modul
 https://www.raspberrypi.com/documentation/computers/compute-module.html#compute-module-5
 https://datasheets.raspberrypi.com/cm5/cm5-datasheet.pdf
-$\to$ 5V Versorgung
+$\to$ 5V supply
 $\to$ [Board connector](https://www.mouser.de/ProductDetail/Amphenol-FCI/10164227-1001A1RLF?qs=MyNHzdoqoQIc%2Fqhi8q%2FTOw%3D%3D)
 Normalbetrieb unter Last $\to$ ~500mA
 
 ## Speicher
 ### SD Karte
-- Benötigt SD host Controller
+- over SPI
 
 ## Screen
 IPhone Xr 460ppi  ~6 Zoll
@@ -91,7 +87,7 @@ IPhone Xr 460ppi  ~6 Zoll
 	- device mode
 	- host mode
 		- USB-Sticks und so
-- Klinke
+- Headphone-jack
 
 
 ### 3G 4G 5G
@@ -108,18 +104,17 @@ IPhone Xr 460ppi  ~6 Zoll
 
 ## Stromversorgung
 erwartet vermutlich 5V oder so, braucht aber wahrscheinlich eigentlich maximal nur 3,3V
-$\to$ Stromversorgung direkt vom Akku,
+$\to$ Stromversorgung direkt vom Akku?
 $\to$ 5V Akku Ladeelektronik
 [load switch](https://www.ti.com/lit/ds/symlink/tps22917.pdf?ts=1749349462384)
 
-### Regler
-Lade und Boost Regler, Power Path Management
-Der kann eigentlich alles was das Herz begehrt
-gibts bei JLC
+### Battery Controller
+Charge and boost controller, Power Path Management
+availlable JLC
 [BQ25895](https://www.ti.com/lit/ds/symlink/bq25895.pdf) ~3€
 
 
-### Akku
+### Battery
 
 | Kapazität                                                                                                                                               | Maße           | Preis | Händler |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----- | ------- |
@@ -128,13 +123,13 @@ gibts bei JLC
 | [10000mAh](https://www.alibaba.com/product-detail/8065113-3-7V-Lipo-Battery-10000mah_62109571526.html?spm=a2700.details.you_may_like.21.6f191303vtdQ68) | 8 x 65 x 113mm | 8,50€ | Alibaba |
 
 
-## Sensoren
+## Sensors
 
 - [[Inertial Measurement Unit|IMU]]
 - 3D [[Magnetometer]]
-- Fingerabdruck Sensor
+- Fingerprint sensor
 	- https://biometrics.mainguet.org/types/fingerprint/product/FPC/FPC_1020_flyer.pdf
 		- SPI
-- Kamera
+- Camera
 
 
