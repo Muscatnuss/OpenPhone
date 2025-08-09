@@ -34,19 +34,17 @@
 		- [x] Current Monitor
 		- [x] Voltage Monitor
 # Hardware
-## Thermal management
-- Battery
-	- wont produce much heat
-- CPU
-	- souldn't touch Battery
+- Back of PCB should face the screen
+	- only very flat components on back
+- PCB cutout for battery
+    - Battery and PCB are on the same height to save space 
 
-Layering
-- Screen
-- Battery
-- RPI -> CPU Wärme nach hinten raus
+## Thermal management
+- all significant heat producers face back
+- Battery and screen keep a distance to hot spots
 
 ## Controller
-Raspberry pi compute Modul
+Raspberry pi compute Module
 https://www.raspberrypi.com/documentation/computers/compute-module.html#compute-module-5
 https://datasheets.raspberrypi.com/cm5/cm5-datasheet.pdf
 $\to$ 5V supply
@@ -60,8 +58,6 @@ Normalbetrieb unter Last $\to$ ~500mA
 ## Screen
 IPhone Xr 460ppi  ~6 Zoll
 
-
-
 |                                                                                                                                                                         | size  | maße                         | resolution  | price | Flex | Händler |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ---------------------------- | ----------- | ----- | ---- | ------- |
 | [FLEX](https://www.alibaba.com/product-detail/Super-Thin-6-67-inch-1080_1601047701892.html?spm=a2700.galleryofferlist.normal_offer.d_title.4c7013a07lG6Xn)              | 6,67" | 165,16mm x 71,532mm x 0,33mm | 1080 x 2160 | 95€   | ja   | Alibaba |
@@ -71,9 +67,9 @@ IPhone Xr 460ppi  ~6 Zoll
 
 - WLan $\to$ schon da
 - Bluetooth $\to$  schon da
-- micro HDMI $\to$ Leitungen einfach raus legen
+- micro HDMI $\to$ just add connector
 - Ethernet?
-- Telefonnetz
+- Phone network
 - NFC
 - USB-C
 	- device mode
@@ -94,9 +90,7 @@ IPhone Xr 460ppi  ~6 Zoll
 [Microphone](https://octopart.com/de/ics-40618-invensense-71346755)
 
 
-## Stromversorgung
-erwartet vermutlich 5V oder so, braucht aber wahrscheinlich eigentlich maximal nur 3,3V
-$\to$ Stromversorgung direkt vom Akku?
+## Powersupply
 $\to$ 5V Akku Ladeelektronik
 [load switch](https://www.ti.com/lit/ds/symlink/tps22917.pdf?ts=1749349462384)
 
